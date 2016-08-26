@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE RelativeLayout>
+<zend-config>
+  <general>
+    <debug>1</debug>
+    <company>
+      <name>E-head</name>
+    </company>
+    <ui>
+      <timezone>Europe/Moscow</timezone>
+    </ui>
+    <db>
+      <host>localhost</host>
+      <username>e-head-base</username>
+      <password>wramu9hE</password>
+      <dbname>e-head-base</dbname>
+      <prefix></prefix>
+    </db>
+    <mail>
+      <from>
+        <address>robot@e-head.ru</address>
+        <caption>Robot e-head.ru</caption>
+      </from>
+      <SMTP>e-head.ru</SMTP>
+    </mail>
+  </general>
+</zend-config>

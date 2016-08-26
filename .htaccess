@@ -1,0 +1,20 @@
+AddDefaultCharset utf-8
+
+php_value upload_max_filesize 50M
+php_value post_max_size 50M
+
+php_value max_input_time -1
+php_value memory_limit 100M
+
+php_flag magic_quotes_gpc off
+php_flag register_globals off
+
+RewriteEngine on
+RewriteBase /
+RewriteRule \.(js|jsb|ico|gif|jpg|png|css|pdf|htm|xml|lpk|cab)$ - [L,NC]
+RewriteRule ^setup - [L,NC]
+RewriteRule ^files - [L,NC]
+RewriteRule ^docs - [L,NC]
+# Hide .git Folders
+RewriteRule ^(.*/)*\.git/ / [F,L]
+RewriteRule .* index.php
